@@ -1,0 +1,46 @@
+# http://www.graphviz.org/content/cluster
+
+digraph wiring_diagram {
+    pad=0.5
+    bgcolor= "#FFFEEA"
+    rankdir=LR
+    splines=ortho
+    concentrate=true
+    
+    node [
+      shape=square
+      color=black
+      fontname=Futura
+      fontsize=10
+      margin=.1
+      width=1.3
+      height=1.3
+      fixedsize=true
+    ]
+    edge [
+      arrowhead=empty
+    ]
+    
+    # Edges
+    "A-8" -> i [dir=none]
+    i -> "C-7"
+    "B-8" -> i [dir=none]
+    i -> "C-7"
+    "A-9" -> i2 [dir=none]
+    i2 -> "B-8"
+    i2 -> i3 [dir=none]
+    i3 -> "C-8"
+    i3 -> "C-9"
+    
+    # Nodes
+    "A-8" [label="A-8\n\nIMPERIAL\nADMINISTRATION\nAND DEFENCE"]
+    "A-9" [label="A-9\n\nUK SPARED\nEUROPEAN\nWARTIME\nUPHEAVAL", style="bold"]
+    "B-8" [label="B-8\n\nPERSISTENCE\nOF\nOLD CLASS\nATITUDES"]
+    "C-7" [label="C-7\n\nGOVERNMENT/\nINDUSTRY/\nUNIVERSITY\nCULTURE GAP", color="#2D2682", style="bold"]
+    "C-8" [label="C-8\n\nOLD FACTORIES,\nOBSOLETE\nPLANT, LOW\nPRODUCTIVITY"]
+    "C-9" [label="C-9\n\nOUTDATED\nUNION\nSTRUCTURE"]
+    i [shape=point, style=invis, width=0, height=0, margin=0]
+    i2 [shape=point, style=invis, width=0, height=0, margin=0]
+    i3 [shape=point, style=invis, width=0, height=0, margin=0]
+
+}
