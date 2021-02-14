@@ -60,6 +60,7 @@ digraph wiring_diagram {
     x13 -> "G-3"
     x13 -> "G-4"
     "B-3" -> "D-3"
+    "A-6" -> "D-6"
     
     # Nodes
     x, x2, x3, x4, x5, x6, x7, x8, x9, x10, x11, x12, x13 [dir=none, shape=point, style=invis, width=0, height=0, margin=0]
