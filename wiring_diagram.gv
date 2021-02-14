@@ -22,25 +22,68 @@ digraph wiring_diagram {
     ]
     
     # Edges
-    "A-8" -> i [dir=none]
-    i -> "C-7"
-    "B-8" -> i [dir=none]
-    i -> "C-7"
-    "A-9" -> i2 [dir=none]
-    i2 -> "B-8"
-    i2 -> i3 [dir=none]
-    i3 -> "C-8"
-    i3 -> "C-9"
+    "A-8" -> x [dir=none]
+    x -> "C-7"
+    "B-8" -> x [dir=none]
+    x -> "C-7"
+    "A-9" -> x2 [dir=none]
+    x2 -> "B-8"
+    x2 -> x3 [dir=none]
+    x3 -> "C-8"
+    x3 -> "C-9"
+    "A-7" -> x4 [dir=none]
+    "D-6" -> x4 [dir=none, color="#2D2682", style="bold"]
+    x4 -> "E-5" [color="#2D2682", style="bold"]
+    "B-8" -> x5 [dir=none]
+    "C-8" -> x5 [dir=none]
+    x5 -> x6 [dir=none]
+    "C-9" -> x6 [dir=none]
+    "A-6" -> x7 [dir=none]
+    x6 -> x7 [dir=none]
+    x7 -> x8 [dir=none]
+    x8 -> "D-6"
+    "F-8" -> x9 [dir=none]
+    x8 -> x9 [dir=none]
+    x9 -> "I-7"
+    "C-2" -> "I-3"
+    "A-2" -> x10 [dir=none]
+    x10 -> "A-3"
+    x10 -> "A-4"
+    "A-2" -> "B-3"
+    "B-3" -> "C-2"
+    "A-2" -> "C-2"
+    "A-3" -> x11 [dir=none]
+    "E-1" -> x11 [dir=none]
+    x11 -> x12 [dir=none]
+    x12 -> "G-1"
+    x12 -> x13 [dir=none]
+    x13 -> "G-3"
+    x13 -> "G-4"
+    "B-3" -> "D-3"
     
     # Nodes
+    x, x2, x3, x4, x5, x6, x7, x8, x9, x10, x11, x12, x13 [dir=none, shape=point, style=invis, width=0, height=0, margin=0]
+    "A-2" [label="A-2\n\nELECTORAL\nEXPECTATIONS", style="bold"]
+    "A-3" [label="A-3\n\nINCREASED\nPUBLIC\nSPENDING", color="#F12818", style="bold"]
+    "A-4" [label="A-4\n\nFULL\nEMPLOYMENT", color="#F12818", style="bold"]
+    "A-6" [label="A-6\n\nMEMORIES\nOF\nDEPRESSION"]
+    "A-7" [label="A-7\n\nRELIANCE\nON IMPERIAL\nMARKETS"]
     "A-8" [label="A-8\n\nIMPERIAL\nADMINISTRATION\nAND DEFENCE"]
     "A-9" [label="A-9\n\nUK SPARED\nEUROPEAN\nWARTIME\nUPHEAVAL", style="bold"]
+    "B-3" [label="B-3\n\nKEYNESIAN\nDEMAND\nMANAGEMENT", color="#F12818", style="bold"]
     "B-8" [label="B-8\n\nPERSISTENCE\nOF\nOLD CLASS\nATITUDES"]
+    "C-2" [label="C-2\n\nINCREASING\nREAL\nEARNINGS"]
     "C-7" [label="C-7\n\nGOVERNMENT/\nINDUSTRY/\nUNIVERSITY\nCULTURE GAP", color="#2D2682", style="bold"]
     "C-8" [label="C-8\n\nOLD FACTORIES,\nOBSOLETE\nPLANT, LOW\nPRODUCTIVITY"]
     "C-9" [label="C-9\n\nOUTDATED\nUNION\nSTRUCTURE"]
-    i [shape=point, style=invis, width=0, height=0, margin=0]
-    i2 [shape=point, style=invis, width=0, height=0, margin=0]
-    i3 [shape=point, style=invis, width=0, height=0, margin=0]
-
+    "D-3" [label="D-3\n\nINVESTMENT\nCLIMATE\nCONSTANTLY\nCHANGING", color="#2D2682", style="bold"]
+    "D-6" [label="D-6\n\nCONFUSED\nATTITUDES TO\nCAPITALISM", color="#2D2682", style="bold"]
+    "E-1" [label="E-1\n\nNATIONALISED\nINDUSTRY\nPRICES FROZEN", color="#2D2682", style="bold"]
+    "E-5" [label="E-5\n\nINDUSTRIAL\nPERFORMANCE\nTAKEN FOR\nGRANTED", color="#F12818", style="bold"]
+    "F-8" [label="F-8\n\nFAILURE TO\nIMPROVE\nEMPLOYEES'\nCONDITIONS", style="bold"]
+    "G-1" [label="G-1\n\nINCREASED\nTAX TAKE", color="#F12818", style="bold"]
+    "G-3" [label="G-3\n\nINCREASED\nMONEY\nSUPPLY", color="#2D2682", style="bold"]
+    "G-4" [label="G-4\n\nHEAVY\nOVERSEAS\nBORROWING"]
+    "I-3" [label="I-3\n\nWAGE\nCLAIMS", color="#F12818", style="bold"]
+    "I-7" [label="I-7\n\nUNION\nATTITUDES", color="#F12818", style="bold"]
 }
