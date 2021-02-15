@@ -6,6 +6,7 @@ digraph wiring_diagram {
     rankdir=LR
     splines=ortho
     concentrate=true
+    #layout=neato
     
     node [
       shape=square
@@ -19,6 +20,8 @@ digraph wiring_diagram {
     ]
     edge [
       arrowhead=empty
+      fontname="Futura"
+      fontsize=10
     ]
     
     # Edges
@@ -61,9 +64,111 @@ digraph wiring_diagram {
     x13 -> "G-4"
     "B-3" -> "D-3"
     "A-6" -> "D-6"
+    "A-4" -> x14 [dir=none]
+    "B-3" -> x14 [dir=none]
+    x14 -> x15 [dir=none]
+    x15 -> "F-5"
+    x15 -> "H-4"
+    "B-3" -> "E-5"
+    "B-6" -> "G-7"
+    "B-7" -> "G-4"
+    "B-9" -> "D-5"
+    "C-7" -> "D-6"
+    "C-7" -> x16 [dir=none]
+    x16 -> "E-7"
+    x16 -> "E-8"
+    "D-3" -> "G-6"
+    "H-4" -> x17 [dir=none, color="#F12818", style="bold"]
+    x17 -> "G-3"
+    x17 -> "D-4" [color="#F12818", style="bold"]
+    "F-5" -> "D-4"
+    "H-4" -> x24 [dir=none, color="#F12818", style="bold"]
+    "G-4" -> x24 [dir=none]
+    x24 -> "D-5" [color="#F12818", style="bold"]
+    "D-4" -> "G-7"
+    "H-9" -> "D-4"
+    "F-7" -> "D-5"
+    "D-5" -> "H-5"
+    "D-6" -> "E-8"
+    "F-1" -> "E-1"
+    "F-1" -> x18 [dir=none, color="#F12818", style="bold"]
+    x18 -> "E-2" [color="#F12818", style="bold"]
+    x18 -> "E-4"
+    "I-3" -> x19 [dir=none, color="#F12818", style="bold"]
+    x19 -> "J-2" [color="#F12818", style="bold"]
+    x19 -> x20 [dir=none, color="#F12818", style="bold"]
+    "J-2" -> x20 [dir=none, color="#F12818", style="bold"]
+    x20 -> x21 [dir=none, color="#F12818", style="bold"]
+    "E-2" -> x21 [dir=none, color="#F12818", style="bold"]
+    x21 -> "F-6" [color="#F12818", style="bold"]
+    "E-2" -> "F-4" [color="#2D2682", style="bold"]
+    "F-2" -> "E-3" [color="#F12818", style="bold"]
+    "E-3" -> "F-3" [color="#F12818", style="bold"]
+    "E-4" -> "F-3"
+    "E-5" -> "E-8" [color="#2D2682", style="bold"]
+    "E-5" -> "E-6"
+    "E-6" -> "F-5"
+    "E-5" -> x22 [dir=none, color="#2D2682", style="bold"]
+    "E-7" -> x22 [dir=none, color="#2D2682", style="bold"]
+    x22 -> "G-8" [color="#2D2682", style="bold"]
+    "E-6" -> "G-6" [color="#2D2682", style="bold"]
+    "E-7" -> "E-6" [color="#2D2682", style="bold"]
+    "E-8" -> "E-9"
+    "E-9" -> "G-7"
+    "F-2" -> "G-5"
+    "F-3" -> x23 [dir=none, color="#F12818", style="bold"]
+    "G-2" -> x23 [dir=none]
+    x23 -> "G-9" [color="#F12818", style="bold"]
+    "F-3" -> "I-7"
+    "F-4" -> "G-5"
+    "K-4" -> "F-4" [color="#2D2682", style="bold"]
+    "F-5" -> "G-3"
+    "F-6" -> "G-5"
+    "F-6" -> "G-6"
+    "I-7" -> "F-7" [color="#2D2682", style="bold"]
+    "F-6" -> "F-8"
+    "F-7" -> "G-7"
+    "F-8" -> "G-9"
+    "F-9" -> "H-9" [color="#F12818", style="bold"]
+    "G-9" -> "I-7" [color="#F12818", style="bold"]
+    "G-8" -> "G-7" [color="#2D2682", style="bold"]
+    "G-6" -> "H-6" [color="#2D2682", style="bold"]
+    "G-5" -> "G-6" [color="#2D2682", style="bold"]
+    "G-3" -> "K-4" [label="INITIATES"]
+    "G-2" -> "F-2"
+    "G-2" -> "J-2"
+    "G-2" -> x25 [dir=none, color="#2D2682", style="bold"]
+    x25 -> "I-3" [color="#2D2682", style="bold"]
+    x25 -> x26 [dir=none]
+    "H-5" -> x26 [dir=none, color="#2D2682", style="bold"]
+    x26 -> "G-6" [color="#2D2682", style="bold"]
+    "G-1" -> "F-2" [color="#F12818", style="bold"]
+    "G-1" -> "I-3" [color="#F12818", style="bold"]
+    "J-2" -> x27 [dir=none, color="#F12818", style="bold"]
+    x27 -> "I-7" [color="#F12818", style="bold"]
+    x27 -> "F-7" [color="#F12818", style="bold"]
+    "H-3" -> "F-3" [color="#2D2682", style="bold"]
+    "H-5" -> "F-9"
+    "H-6" -> "G-7" [color="#2D2682", style="bold"]
+    "G-7" -> "F-7"
+    "I-7" -> "G-7" [color="#F12818", style="bold"]
+    "I-7" -> "H-9"
+    "J-2" -> "I-3"
+    "J-2" -> "K-4" [color="#F12818", style="bold", label="PERPETUATES"]
+    "K-4" -> x28 [dir=none, color="#F12818", style="bold"]
+    x28 -> "G-1" [color="#2D2682", style="bold"]
+    x28 -> "F-1" [color="#F12818", style="bold"]
+    "K-4" -> x29 [dir=none, color="#2D2682", style="bold"]
+    x29 -> "H-3" [color="#2D2682", style="bold"]
+    x29 -> x30 [dir=none, color="#2D2682", style="bold"]
+    x30 -> "G-2" [color="#2D2682", style="bold"]
+    x30 -> "F-2"
+    "K-6" -> "H-3" [color="#2D2682", style="bold"]
+    "G-7" -> "F-6"
+    "G-7" -> "K-6"
     
     # Nodes
-    x, x2, x3, x4, x5, x6, x7, x8, x9, x10, x11, x12, x13 [dir=none, shape=point, style=invis, width=0, height=0, margin=0]
+    x, x2, x3, x4, x5, x6, x7, x8, x9, x10, x11, x12, x13, x14, x15, x16, x17, x18, x19, x20, x21, x22, x23, x24, x25, x26, x27, x28, x29, x30 [dir=none, shape=point, style=invis, width=0, height=0, margin=0]
     "A-2" [label="A-2\n\nELECTORAL\nEXPECTATIONS", style="bold"]
     "A-3" [label="A-3\n\nINCREASED\nPUBLIC\nSPENDING", color="#F12818", style="bold"]
     "A-4" [label="A-4\n\nFULL\nEMPLOYMENT", color="#F12818", style="bold"]
@@ -72,19 +177,53 @@ digraph wiring_diagram {
     "A-8" [label="A-8\n\nIMPERIAL\nADMINISTRATION\nAND DEFENCE"]
     "A-9" [label="A-9\n\nUK SPARED\nEUROPEAN\nWARTIME\nUPHEAVAL", style="bold"]
     "B-3" [label="B-3\n\nKEYNESIAN\nDEMAND\nMANAGEMENT", color="#F12818", style="bold"]
+    "B-6" [label="B-6\n\nDELAYED\nENTRY TO\nEEC MARKETS"]
+    "B-7" [label="B-7\n\nINDEBTEDNESS\nFOLLOWING\nTHE WAR"]
     "B-8" [label="B-8\n\nPERSISTENCE\nOF\nOLD CLASS\nATITUDES"]
+    "B-9" [label="B-9\n\nATTEMPT\nTO DEFEND\nSTERLING\n(PARTLY)"]
     "C-2" [label="C-2\n\nINCREASING\nREAL\nEARNINGS"]
-    "C-7" [label="C-7\n\nGOVERNMENT/\nINDUSTRY/\nUNIVERSITY\nCULTURE GAP", color="#2D2682", style="bold"]
+    "C-7" [label="C-7\n\n(END ECONOMY)\nGOVERNMENT/\nINDUSTRY/\nUNIVERSITY\nCULTURE GAP", color="#2D2682", style="bold"]
     "C-8" [label="C-8\n\nOLD FACTORIES,\nOBSOLETE\nPLANT, LOW\nPRODUCTIVITY"]
     "C-9" [label="C-9\n\nOUTDATED\nUNION\nSTRUCTURE"]
     "D-3" [label="D-3\n\nINVESTMENT\nCLIMATE\nCONSTANTLY\nCHANGING", color="#2D2682", style="bold"]
+    "D-4" [label="D-4\n\nLABOUR\nSHORTAGES\nIN GROWTH\nINDUSTRIES", color="#F12818", style="bold"]
+    "D-5" [label="D-5\n\nRECURRING\nTRADE\nDEFICITS", color="#F12818", style="bold"]
     "D-6" [label="D-6\n\nCONFUSED\nATTITUDES TO\nCAPITALISM", color="#2D2682", style="bold"]
     "E-1" [label="E-1\n\nNATIONALISED\nINDUSTRY\nPRICES FROZEN", color="#2D2682", style="bold"]
+    "E-2" [label="E-2\n\nPRIVATE\nSECTOR\nPRICES\nCONTROLLED", color="#F12818", style="bold"]
+    "E-3" [label="E-3\n\nCHANGES IN\nINDIVIDUAL\nATTITUDES"]
+    "E-4" [label="E-4\n\nWAGE FREEZE\nOR\nRESTRAINT"]
     "E-5" [label="E-5\n\nINDUSTRIAL\nPERFORMANCE\nTAKEN FOR\nGRANTED", color="#F12818", style="bold"]
-    "F-8" [label="F-8\n\nFAILURE TO\nIMPROVE\nEMPLOYEES'\nCONDITIONS", style="bold"]
+    "E-6" [label="E-6\n\nMUDDLED,\nINCONSISTENT\nINDUSTRIAL\nPOLICIES", color="#2D2682", style="bold"]
+    "E-7" [label="E-7\n\nLACK OF\nBUSINESS\nEXPERIENCE IN\nGOVERNMENT", color="#2D2682", style="bold"]
+    "E-8" [label="E-8\n\nTALENT\nGOES TO\nCIVIL SERVICE,\nUNIVERSITIES", color="#2D2682", style="bold"]
+    "E-9" [label="E-9\n\nSHORTAGE OF\nMANAGEMENT\nTALENT IN\nINDUSTRY", color="#2D2682", style="bold"]
+    "F-1" [label="F-1\n\nGOVERNMENTS\nTRY TO SUPPRESS\nINFLATIONARY\nSYMPTOMS"]
+    "F-2" [label="F-2\n\nSAVINGS AND\nINVESTMENT\nDISCOURAGED", color="#F12818", style="bold"]
+    "F-3" [label="F-3\n\nPUBLIC\nDISAPPOINTMENT\nRESENTMENT", color="#F12818", style="bold"]
+    "F-4" [label="F-4\n\nCOMPANIES'\nCASH FLOW\nREDUCED", color="#2D2682", style="bold"]
+    "F-5" [label="F-5\n\nGOVERNMENT\nSUPPORT FOR\nDECLINING\nINDUSTRIES", color="#F12818", style="bold"]
+    "F-6" [label="F-6\n\nDECLINING\nPROFITS", color="#F12818", style="bold"]
+    "F-7" [label="F-7\n\nWEAK\nEXPORTS", color="#F12818", style="bold"]
+    "F-8" [label="F-8\n\nFAILURE TO\nIMPROVE\nEMPLOYEES'\nCONDITIONS"]
+    "F-9" [label="F-9\n\nFEAR OF UN-\nEMPLOYMENT", color="#F12818", style="bold"]
     "G-1" [label="G-1\n\nINCREASED\nTAX TAKE", color="#F12818", style="bold"]
+    "G-2" [label="G-2\n\nFEAR OF\nFURTHER\nINFLATION", color="#2D2682", style="bold"]
     "G-3" [label="G-3\n\nINCREASED\nMONEY\nSUPPLY", color="#2D2682", style="bold"]
     "G-4" [label="G-4\n\nHEAVY\nOVERSEAS\nBORROWING"]
+    "G-5" [label="G-5\n\nLACK OF\nFUNDS FOR\nINVESTMENT", color="#F12818", style="bold"]
+    "G-6" [label="G-6\n\nBUSINESS\nCONFIDENCE\nREDUCED", color="#2D2682", style="bold"]
+    "G-7" [label="G-7\n\nWEAK\nPRIVATE\nSECTOR", color="#F12818", style="bold, filled"]
+    "G-8" [label="G-8\n\nLACK\nGOVERNMENT-\nINDUSTRY\nTRADING\nPARTNERSHIP", color="#2D2682", style="bold"]
+    "G-9" [label="G-9\n\nSCOPE FOR\nMILITANT\nUNION\nLEADERSHIP", color="#F12818", style="bold"]
+    "H-3" [label="H-3\n\nSOCIAL\nSERVICES\nDETERIORATE", color="#2D2682", style="bold"]
+    "H-4" [label="H-4\n\n*GO*\nINCREASE\nHOME\nDEMAND", color="#F12818", style="bold"]
+    "H-5" [label="H-5\n\n*STOP*\nREDUCE\nHOME\nDEMAND", color="#F12818", style="bold"]
+    "H-6" [label="H-6\n\nLACK OF\nINVESTMENT\n(INNOVATION\nATTITUDES)", color="#2D2682", style="bold"]
+    "H-9" [label="H-9\n\nREDUCED\nLABOUR\nMOBILITY &\nFLEXIBILITY", color="#F12818", style="bold"]
     "I-3" [label="I-3\n\nWAGE\nCLAIMS", color="#F12818", style="bold"]
     "I-7" [label="I-7\n\nUNION\nATTITUDES", color="#F12818", style="bold"]
+    "J-2" [label="J-2\n\nPRICE\nINCREASES", color="#F12818", style="bold"]
+    "K-4" [label="K-4\n\nINFLATION", color="#F12818", style="bold"]
+    "K-6" [label="K-6\n\nLOW GNP\nGROWTH", style="bold"]
 }
