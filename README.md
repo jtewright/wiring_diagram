@@ -12,7 +12,7 @@ See it in browser: https://jtewright.com/wiring_diagram
 ![wiring diagram original](https://github.com/jtewright/wiring_diagram/blob/main/wiring_diagram_original.png?raw=true)
 
 *Graphviz*
-![wiring diagram in Graphviz](https://github.com/jtewright/wiring_diagram/blob/main/wiring_diagram_wip.png?raw=true)
+![wiring diagram in Graphviz](https://github.com/jtewright/wiring_diagram/blob/main/wiring_diagram_graphviz.png?raw=true)
 
 *Figma*
 ![wiring diagram in Figma](https://github.com/jtewright/wiring_diagram/blob/main/wiring_diagram_figma.png?raw=true)
