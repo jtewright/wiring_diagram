@@ -10,5 +10,5 @@
 **Figma**
 ![wiring diagram in Figma](https://github.com/jtewright/wiring_diagram/blob/main/wiring_diagram_figma.png?raw=true)
 
-**Original**
+**Original** (redrawn by Ron Clouse)
 ![wiring diagram original](https://github.com/jtewright/wiring_diagram/blob/main/wiring_diagram_original.png?raw=true)
